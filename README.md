@@ -16,6 +16,15 @@ It draws on [Lauren F. Klein](https://lklein.com/)'s lab implementation of Peck'
 
 # Table of Contents
 
+- [Scenario](#scenario)
+- [Applicant Data](#applicant-data)
+- [Objective](#objective)
+- [Loading the Data](#loading-the-data)
+- [Writing the Algorithm](#writing-the-algorithm)
+- [Applicant Stories](#applicant-stories)
+  * [Reflection Questions](#reflection-questions)
+- [Lab Notebook Questions](#lab-notebook-questions)
+
 # Scenario
 
 Imagine you are working for *Moogle*, a well-known tech company that receives tens of thousands of job applications from graduating seniors every year.
@@ -172,6 +181,13 @@ A couple sample criteria that might get you started as you write this program.
 Once you have a working program using the `example_list` data, run the program on the `allApps` data.
 
 <blockquote>QX: Roughly what percentage of applicants make it through the first-pass cuts? What are your thoughts on the effectiveness or efficacy of your algorithm? What would be your next step in continuing to develop or refine this algorithm?</blockquote>
+
+Code that can help you determine percentage of applicants that make it through first-pass cuts.
+```Python
+for finalist in finalists:
+    print(finalist)
+print("Your algorithm kept", round(len(finalists)/len(allApps)*100), "percent of applicants")
+```
     
 # Applicant Stories
 
