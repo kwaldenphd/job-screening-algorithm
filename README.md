@@ -31,17 +31,17 @@ Since the company receives too many job applications for HR to individually asse
 
 # Applicant Data
 
-*Moogle* receives an overwhelming number of applications for open positions.
+1. *Moogle* receives an overwhelming number of applications for open positions.
 
-So the company has designed an application form that is designed to get numerical data from applicants.
+2. So the company has designed an application form that is designed to get numerical data from applicants.
 
-This data is run through a screening algorithm to determine what applicants make the first-pass cut.
+3. This data is run through a screening algorithm to determine what applicants make the first-pass cut.
 
-Job applications must enter the grades they received in 6 core Computer Science courses, as well as their overall GPA. 
+4. Job applications must enter the grades they received in 6 core Computer Science courses, as well as their overall GPA. 
 
-For your convenience, this will be stored in a python `list` that you can access.
+5. For your convenience, this will be stored in a python `list` that you can access.
 
-For example, a student who received the following scores...
+6. For example, a student who received the following scores...
 
 - **Intro to CS:** 100
 - **Data Structures:** 95
@@ -51,13 +51,13 @@ For example, a student who received the following scores...
 - **Operative Systems:** 75
 - **Overall College GPA:** 83
 
-... would result in the following list: `[100, 95, 80, 89, 91, 75, 83]`. 
+7. ... would result in the following list: `[100, 95, 80, 89, 91, 75, 83]`. 
 
-You can assume that index `0` is *always* Intro to CS, `1` is *always* Data Structures, etc.
+8. You can assume that index `0` is *always* Intro to CS, `1` is *always* Data Structures, etc.
 
-Because you are processing many applications, your program will receive a *list of lists*. 
+9. Because you are processing many applications, your program will receive a *list of lists*. 
 
-For example, this would be the information for 3 applicants:
+10. For example, this would be the information for 3 applicants:
 
 `[ 
     [100, 95, 80, 89, 91, 75, 83], 
@@ -67,21 +67,21 @@ For example, this would be the information for 3 applicants:
 
 # Objective
 
-Your task in this lab is to write a program that takes applicant data and automates the first-pass cut decision process.
+11. Your task in this lab is to write a program that takes applicant data and automates the first-pass cut decision process.
 
-The first step is to determine how you are going to select top applicants.
+12. The first step is to determine how you are going to select top applicants.
 
-The underlying logic or criteria are the foundation for the Python program.
+13. The underlying logic or criteria are the foundation for the Python program.
 
-The second step is to write a Python function or program that will return first-pass candidates based on a desired set of critera.
+14. The second step is to write a Python function or program that will return first-pass candidates based on a desired set of critera.
 
 # Loading the Data
 
-We'll be working with two datasets for this task.
+15. We'll be working with two datasets for this task.
 
-The first is `example_list`, which contains sample data for a limited number of applicants.
+16. The first is `example_list`, which contains sample data for a limited number of applicants.
 
-We can load that data manually.
+17. We can load that data manually.
 
 ```Python
 example_list = [[93, 89, 63, 88, 60, 73, 80], [100, 63, 57, 96, 58, 71, 78], [81, 91, 99, 78, 57, 87, 86], [81, 73, 100, 57, 91, 60, 66], [86, 89, 64, 81, 69, 93, 92], [78, 63, 88, 95, 59, 98, 90], [55, 74, 68, 55, 69, 94, 80], [64, 77, 75, 92, 77, 72, 83], [95, 58, 92, 62, 77, 64, 59], [94, 78, 84, 83, 68, 63, 76]]
@@ -89,11 +89,11 @@ example_list = [[93, 89, 63, 88, 60, 73, 80], [100, 63, 57, 96, 58, 71, 78], [81
 example_list
 ```
 
-The second dataset `allApps` contains randomly-generated data for 10,000 applicants.
+18. The second dataset `allApps` contains randomly-generated data for 10,000 applicants.
 
-This data is stored in the `allApps.py` file.
+19. This data is stored in the `allApps.py` file.
 
-You'll need to save and load this file in your local Python environment.
+20. You'll need to save and load this file in your local Python environment.
 
 ```Python
 # instructions for a Jupyter notebook
@@ -111,11 +111,11 @@ from allApps import allApps
 allApps
 ```
 
-We'll come back to this data later.
+21. We'll come back to this data later.
 
 # Writing the Algorithm
 
-Remember the format of each app:
+22. Remember the format of each app:
 
 `[0]` - Intro to CS: 100
 
@@ -132,11 +132,11 @@ Remember the format of each app:
 `[6]` - Overall College GPA: 83
 
 
-We can use the `example_list` to start with building this program.
+23. We can use the `example_list` to start with building this program.
 
-Let's say one of your criteria is a minimum overall college GPA of 80.
+24. Let's say one of your criteria is a minimum overall college GPA of 80.
 
-We can write a program that uses a `for` loop, tests for the GPA field value condition, and returns only list entries that meet the condition.
+25. We can write a program that uses a `for` loop, tests for the GPA field value condition, and returns only list entries that meet the condition.
 
 ```Python
 # create list to hold candidates who make it through first-pass cuts
@@ -151,9 +151,9 @@ for app in example_list: # iterates through each applicant in example_list
 finalists
 ```
 
-We can see from the output that, based on this criteria, four applicants would make it past the first-pass cuts.
+26. We can see from the output that, based on this criteria, four applicants would make it past the first-pass cuts.
 
-Another example, this time with the criteria that applicants have no grade below 65.
+27. Another example, this time with the criteria that applicants have no grade below 65.
 
 ```Python
 # create list to hold candidates who make it through first-pass cuts
@@ -168,7 +168,7 @@ for app in example_list: # iterates through each applicant in example_list
 finalists
 ```
 
-A couple sample criteria that might get you started as you write this program.
+28. A couple sample criteria that might get you started as you write this program.
 - Applicants that have at least 4 grades above 85
 - Applicants that have an average grade above 85
 
@@ -176,11 +176,11 @@ A couple sample criteria that might get you started as you write this program.
 
 <blockquote>Q2: Include code + comments for a Python program that implements your criteria.</blockquote>
 
-Once you have a working program using the `example_list` data, run the program on the `allApps` data.
+29. Once you have a working program using the `example_list` data, run the program on the `allApps` data.
 
 <blockquote>Q3: Roughly what percentage of applicants make it through the first-pass cuts? What are your thoughts on the effectiveness or efficacy of your algorithm? What would be your next step in continuing to develop or refine this algorithm?</blockquote>
 
-Code that can help you determine percentage of applicants that make it through first-pass cuts.
+30. Code that can help you determine percentage of applicants that make it through first-pass cuts.
 ```Python
 for finalist in finalists:
     print(finalist)
@@ -189,7 +189,7 @@ print("Your algorithm kept", round(len(finalists)/len(allApps)*100), "percent of
     
 # Applicant Stories
 
-Now that you've developed a working algorithm, let's think through how your algorithm would handle some specific applicant use cases.
+31. Now that you've developed a working algorithm, let's think through how your algorithm would handle some specific applicant use cases.
 
 ## Story 1
 
@@ -235,7 +235,7 @@ How would your algorithm treat each of these candidates?
 
 ## Reflection Questions
 
-These stories highlight the necessity of critically reflecting on the decisions made when building an algorithm, as well as possible tradeoffs.
+32. These stories highlight the necessity of critically reflecting on the decisions made when building an algorithm, as well as possible tradeoffs.
 
 <blockquote>Q4: What systemic advantages/disadvantages are your algorithms likely to amplify?</blockquote>
 
@@ -245,7 +245,7 @@ These stories highlight the necessity of critically reflecting on the decisions 
 
 # Hiring Algorithms in the Real World
 
-To learn more about real-world applications of the type of system we developed in this lab:
+33. To learn more about real-world applications of the type of system we developed in this lab:
 - David Gershgorn, "[Companies are on the hook if their hiring algorithms are biased](https://qz.com/1427621/companies-are-on-the-hook-if-their-hiring-algorithms-are-biased/)" *Quartz* (22 October 2018)
 - Rachel Kraus, "[Amazon used AI to promote diversity. Too bad it's plagued with gender bias.](https://mashable.com/article/amazon-sexist-recruiting-algorithm-gender-bias-ai/)" *Mashable* (10 October 2018)
 - Gideon Mann and Cathy O'Neil, "[Hiring Algorithms Are Not Neutral](https://hbr.org/2016/12/hiring-algorithms-are-not-neutral)" *Harvard Business Review* (9 December 2016)
