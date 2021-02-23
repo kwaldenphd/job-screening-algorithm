@@ -3,8 +3,6 @@
 <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" /></a>
 This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
-## Lab Goals
-
 ## Acknowledgements
 
 This lab is based on Evan Peck's "Ethical Design in CS 1: Building Hiring Algorithms" module. 
@@ -174,13 +172,13 @@ A couple sample criteria that might get you started as you write this program.
 - Applicants that have at least 4 grades above 85
 - Applicants that have an average grade above 85
 
-<blockquote>QX: Work together to determine the cutoff points or critera for the first-pass cuts. List your criteria and describe the decision making process used to arrive at those criteria.</blockquote>
+<blockquote>Q1: Work together to determine the cutoff points or critera for the first-pass cuts. List your criteria and describe the decision making process used to arrive at those criteria.</blockquote>
 
-<blockquote>QX: Include code + comments for a Python program that implements your criteria.</blockquote>
+<blockquote>Q2: Include code + comments for a Python program that implements your criteria.</blockquote>
 
 Once you have a working program using the `example_list` data, run the program on the `allApps` data.
 
-<blockquote>QX: Roughly what percentage of applicants make it through the first-pass cuts? What are your thoughts on the effectiveness or efficacy of your algorithm? What would be your next step in continuing to develop or refine this algorithm?</blockquote>
+<blockquote>Q3: Roughly what percentage of applicants make it through the first-pass cuts? What are your thoughts on the effectiveness or efficacy of your algorithm? What would be your next step in continuing to develop or refine this algorithm?</blockquote>
 
 Code that can help you determine percentage of applicants that make it through first-pass cuts.
 ```Python
@@ -239,11 +237,11 @@ How would your algorithm treat each of these candidates?
 
 These stories highlight the necessity of critically reflecting on the decisions made when building an algorithm, as well as possible tradeoffs.
 
-<blockquote>QX: What systemic advantages/disadvantages are your algorithms likely to amplify?</blockquote>
+<blockquote>Q4: What systemic advantages/disadvantages are your algorithms likely to amplify?</blockquote>
 
-<blockquote>QX: What does it mean to design a fair algorithm?</blockquote>
+<blockquote>Q5: What does it mean to design a fair algorithm?</blockquote>
 
-<blockquote>QX: What is the human cost of efficiency? More permissive algorithms may capture more interesting candidates, but it also means more costly, human work. What would an ideal balance look like?</blockquote>
+<blockquote>Q6: What is the human cost of efficiency? More permissive algorithms may capture more interesting candidates, but it also means more costly, human work. What would an ideal balance look like?</blockquote>
 
 # Hiring Algorithms in the Real World
 
@@ -256,3 +254,15 @@ To learn more about real-world applications of the type of system we developed i
 - Jeffrey Dastin, "[Amazon scraps secret AI recruiting tool that showed bias against women](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G)" *Reuters* (10 October 2018)
 
 # Lab Notebook Questions
+
+Q1: Work together to determine the cutoff points or critera for the first-pass cuts. List your criteria and describe the decision making process used to arrive at those criteria.
+
+Q2: Include code + comments for a Python program that implements your criteria.
+
+Q3: Roughly what percentage of applicants make it through the first-pass cuts? What are your thoughts on the effectiveness or efficacy of your algorithm? What would be your next step in continuing to develop or refine this algorithm?
+
+Q4: What systemic advantages/disadvantages are your algorithms likely to amplify?
+
+Q5: What does it mean to design a fair algorithm?
+
+Q6: What is the human cost of efficiency? More permissive algorithms may capture more interesting candidates, but it also means more costly, human work. What would an ideal balance look like?
