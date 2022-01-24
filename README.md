@@ -14,6 +14,8 @@ It draws on [Lauren F. Klein](https://lklein.com/)'s lab implementation of Peck'
 
 # Table of Contents
 
+- [Lab Notebook Template](#lab-notebook-template)
+- [Data](#data)
 - [Scenario](#scenario)
 - [Applicant Data](#applicant-data)
 - [Objective](#objective)
@@ -22,6 +24,26 @@ It draws on [Lauren F. Klein](https://lklein.com/)'s lab implementation of Peck'
 - [Applicant Stories](#applicant-stories)
   * [Reflection Questions](#reflection-questions)
 - [Lab Notebook Questions](#lab-notebook-questions)
+
+[Click here](https://colab.research.google.com/drive/1skzQ8PGBnd8ReK9fxnaAH7oGKGUvVjvM?usp=sharing) to access lab procedure as a Jupyter Notebook.
+
+# Lab Notebook Template
+
+[Click here](https://colab.research.google.com/drive/1Pi0h6-05vGShhnsU1cgkINPlIbmKlPXI?usp=sharing) to access lab notebook template as a Jupyter Notebook.
+
+# Data
+
+We'll be using randomly generated data for 10,000 applicants.
+
+This data is in the `allApps.py` file:
+  * [Click here](https://drive.google.com/file/d/1xNty5ic9Pb_3A4eGhGkQSJZm5qb6g8GX/view?usp=sharing) to download from Google Drive.
+
+If working with Jupyter Notebooks on your local computer, you'll need to move the `allApps.py` file into the same directory (folder) as the Jupyter Notebook.
+- Alternatively, you can provide the full file path.
+
+If working in Google CoLab, you'll either need to upload the file to your session or mount Google Drive to access the file.
+- [Uploading files](https://youtu.be/6HFlwqK3oeo?t=177)
+- [Mounting Google Drive](https://www.marktechpost.com/2019/06/07/how-to-connect-google-colab-with-google-drive/)
 
 # Scenario
 
@@ -92,8 +114,16 @@ example_list
 18. The second dataset `allApps` contains randomly-generated data for 10,000 applicants.
 
 19. This data is stored in the `allApps.py` file.
+  * [Click here](https://drive.google.com/file/d/1xNty5ic9Pb_3A4eGhGkQSJZm5qb6g8GX/view?usp=sharing) to download from Google Drive.
 
-20. You'll need to save and load this file in your local Python environment.
+20. Then we'll need to load the data in Python.
+
+20a. If working with Jupyter Notebooks on your local computer, you'll need to move the `allApps.py` file into the same directory (folder) as the Jupyter Notebook.
+- Alternatively, you can provide the full file path.
+
+20b. If working in Google CoLab, you'll either need to upload the file to your session or mount Google Drive to access the file.
+- [Uploading files](https://youtu.be/6HFlwqK3oeo?t=177)
+- [Mounting Google Drive](https://www.marktechpost.com/2019/06/07/how-to-connect-google-colab-with-google-drive/)
 
 ```Python
 # instructions for a Jupyter notebook
@@ -194,42 +224,42 @@ print("Your algorithm kept", round(len(finalists)/len(allApps)*100), "percent of
 ## Story 1
 
 How would your algorithm handle an excellent candidate who thought they should put in letter grades?
-`[‘A’, ‘A’, ‘A’, ‘A’, ‘A’, ‘A’, ‘A’]`
+- `[‘A’, ‘A’, ‘A’, ‘A’, ‘A’, ‘A’, ‘A’]`
 
 Or a candidate who entered their grades on a 4-point scale?
-`[4, 3.9, 4, 4, 3.95, 4, 3.9]`
+- `[4, 3.9, 4, 4, 3.95, 4, 3.9]`
 
 ## Story 2
 
 How would your algorithm handle a candidate that tested out of or didn't take *Intro to Computer Science*.
 
 Or let's say this candidate saw the form and thought putting `-1` in that field would make it clear they did not take the course.
-`[-1, 95, 99, 94, 96, 98, 95]`
+- `[-1, 95, 99, 94, 96, 98, 95]`
 
 ## Story 3
 
 How would your algorithm handle an applicant who mistyped one of input data points?
 
 Maybe they accidentally added or inflated a number.
-`[681, 68, 73, 70, 81, 91, 59]`
+- `[681, 68, 73, 70, 81, 91, 59]`
 
 Or maybe they dropped a number.
-`[100, 100, 100, 100, 100, 100, 10]`
+- `[100, 100, 100, 100, 100, 100, 10]`
 
 ## Story 4
 
 How would your algorithm handle an applicant who had a medical emergency or personal tragedy one semester?
-`[95, 93, 50, 91, 98, 90, 90]`
+- `[95, 93, 50, 91, 98, 90, 90]`
 
 ## Story 5
 
 How would your algorithm handle an applicant who came from an underresourced background?
 
 This applicant struggled at the beginning of college in their early courses but showed extraordinary growth by the time they graduated.
-`[65, 75, 85, 95, 100, 100, 80]`
+- `[65, 75, 85, 95, 100, 100, 80]`
 
 Or an inverse trajectory- a candidate who performed well in early courses but then coasted through later coursework.
-`[100, 100, 95, 85, 75, 65, 80]`
+- `[100, 100, 95, 85, 75, 65, 80]`
 
 How would your algorithm treat each of these candidates?
 
@@ -254,6 +284,8 @@ How would your algorithm treat each of these candidates?
 - Jeffrey Dastin, "[Amazon scraps secret AI recruiting tool that showed bias against women](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G)" *Reuters* (10 October 2018)
 
 # Lab Notebook Questions
+
+[Click here](https://colab.research.google.com/drive/1Pi0h6-05vGShhnsU1cgkINPlIbmKlPXI?usp=sharing) to access lab notebook template as a Jupyter Notebook.
 
 Q1: Work together to determine the cutoff points or critera for the first-pass cuts. List your criteria and describe the decision making process used to arrive at those criteria.
 
